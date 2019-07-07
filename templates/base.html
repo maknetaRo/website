@@ -1,11 +1,55 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Coding Journal</title>
+    <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Coding Journal</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="{% static 'css/default.css' %}">
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}">
+	<link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+
+   <!-- Script
+   ================================================== -->
+	<script src="{% static 'js/modernizr.js' %}"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{% static 'favicon.png' %}" >
+
   </head>
   <body>
+    <!-- Top Bar -->
+  {% include 'partials/_topbar.html' %}
+  <!-- Nav Bar -->
+  {% include 'partials/_navbar.html' %}
+
+  <!--  Main Content -->
     {% block content %}
     {% endblock %}
+    <!-- Sidebar -->
+
+    <!-- Footer -->
+  {% include 'partials/_footer.html' %}
+
+
+    <!-- Java Script
+  ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
   </body>
 </html>

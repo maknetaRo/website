@@ -1,6 +1,106 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-    <h1>About</h1>
+
+<!-- Content
+================================================== -->
+<div id="content-wrap">
+
+ <div class="row">
+
+   <div id="main" class="eight columns">
+
+     <section class="page">
+
+       <h2 class="entry-title">
+           About the author of the blog:
+       </h2>
+
+       <p class="lead">My name's Magda Rosłaniec but I like my internet nickname: makneta. I'm a teacher, mother and
+       self-taught developer who wants to change her career into programming. </p>
+       <img src="{% static 'images/lake_krzywe.jpeg' %}">
+       <br>
+         <p>I live in a medium size town in the north-east Poland. I love my small fatherland, it's a peaceful place, full
+         of lakes and forests, where I enjoy running, nordic walking and riding a bike in my free time.</p>
+       <img src="{% static 'images/hancza_river.jpg' %}">
+       <br>
+         <p>I started my adventure with programming in September 2017 and since then I've been slowly but steadily
+         learning Python and Django. I've learnt also a bit of SQL, JavaScript and C++ but Python is deeply in my
+         heart. My other passion is art, so I sometimes "draw" in CSS for pleasure.</p>
+         <p>I'm taking part in a #100DaysOfCode movement and everyday teach myself something new. I'm a driven by these
+         words: </p>
+         <h3><i>“Don't wish it was easier wish you were better. Don't wish for less problems wish for more skills.
+             Don't wish for less challenge wish for more wisdom”</i></h3>
+         <p><span>Jin Rohn</span></p>
+       <img src="static/images/suwalki_zalew.jpg">
+       <br>
+         <h2 class="entry-title">
+           About the blog:
+       </h2>
+         <p class="lead">This blog is my first live application written in Django. The code is not finished.
+         I'm going to add new features and write about it. So Python and Django will be the main topics of this website.</p>
+         <p>By no means I'm an expert. I'm still learning and as the title says it's my coding journal.
+         I'm going to write about things I'm working on, about things I've just learnt or want to try.
+         If you think that my solutions aren't good, don't hesitate to let me know. If you like my posts,
+         don't hesitate to let me know, too.</p>
+
+<!--       <div class="row">-->
+
+<!--           <div class="six columns left">-->
+
+<!--             <h5>Our Process.</h5>-->
+
+<!--             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam-->
+<!--              voluptatem quia voluptas sit aspernatur aut odit aut fugit.-->
+<!--              </p>-->
+
+<!--             </div>-->
+
+<!--             <div class="six columns right">-->
+
+<!--             <h5>Our Approach.</h5>-->
+
+<!--             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam-->
+<!--              voluptatem quia voluptas sit aspernatur aut odit aut fugit.-->
+<!--              </p>-->
+
+<!--           </div>-->
+
+<!--         </div>-->
+
+<!--         <div class="row">-->
+
+<!--           <div class="six columns left">-->
+
+<!--           <h5>Our Goal.</h5>-->
+
+<!--           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam-->
+<!--            voluptatem quia voluptas sit aspernatur aut odit aut fugit.-->
+<!--            </p>-->
+
+<!--           </div>-->
+
+<!--           <div class="six columns right">-->
+
+<!--           <h5>Our Mission.</h5>-->
+
+<!--           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam-->
+<!--            voluptatem quia voluptas sit aspernatur aut odit aut fugit.-->
+<!--            </p>-->
+
+<!--           </div>-->
+
+         </div>
+
+     </section> <!-- End page -->
+     {% include 'partials/_sidebar.html' %}
+   </div> <!-- End main -->
+</div>
+
 
 {% endblock %}
