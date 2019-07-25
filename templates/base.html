@@ -30,15 +30,26 @@
 
   </head>
   <body>
+    <header id="top">
     <!-- Top Bar -->
   {% include 'partials/_topbar.html' %}
   <!-- Nav Bar -->
   {% include 'partials/_navbar.html' %}
+  </header>
 
   <!--  Main Content -->
+  <div id="content-wrap">
+
+   <div class="row">
     {% block content %}
     {% endblock %}
+
     <!-- Sidebar -->
+     {% include 'partials/_sidebar.html' %}
+  </div>
+</div>
+
+
 
     <!-- Footer -->
   {% include 'partials/_footer.html' %}
