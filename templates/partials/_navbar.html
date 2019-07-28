@@ -7,7 +7,10 @@
 	   	<div class="row">
 
 			   	<ul id="nav" class="nav">
-			      	<li class="current"><a href="#">Home</a></li>
+			      	<li {% if '/' == request.path %}
+							class="current"
+							{% endif %}
+							><a href="{% url 'home' %}">Home</a></li>
 			      	<!-- <li class="has-children"><a href="#">Dropdown</a>
 	                  <ul>
 	                     <li><a href="#">Submenu 01</a></li>
@@ -15,7 +18,10 @@
 	                     <li><a href="#">Submenu 03</a></li>
 	                  </ul>
 	               </li> -->
-	               <li><a href="#">About</a></li>
+	               <li {% if 'about' in request.path %}
+								 class="current"
+								 {% endif %}>
+								 <a href="{% url 'about' %}">About</a></li>
 	               <!-- <li><a href="archives.html">Archives</a></li>
 			      	<li class="has-children"><a href="single.html">Blog</a>
 							<ul>
